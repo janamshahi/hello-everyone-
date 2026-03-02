@@ -1,0 +1,16 @@
+{% extends 'app1/base.html' %}
+{% block content %}
+    <h1 class=text-center>employee management system</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col col-8 offset-2">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
